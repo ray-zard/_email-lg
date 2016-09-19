@@ -1,46 +1,49 @@
 <style type="text/css">
-  .header {
-    background: #3aaa35;
-  }
-  .header .columns {
-    padding-bottom: 0;
-  }
-  .header p {
-    color: #fff;
-    padding-top: 15px;
-  }
-  .header .wrapper-inner {
-    padding: 20px;
-  }
-  .header .container {
-    background: transparent;
-  }
-  table.button.facebook table td {
-    background: #3B5998 !important;
-    border-color: #3B5998;
-  }
-  table.button.twitter table td {
-    background: #1daced !important;
-    border-color: #1daced;
-  }
-  table.button.google table td {
-    background: #DB4A39 !important;
-    border-color: #DB4A39;
-  }
-  .wrapper.secondary {
-    background: #f3f3f3;
-  }
+
+	.header {
+		background: #3aaa35;
+	}
+	
+	.header .wrapper-inner {
+		padding: 16px 16px 0 16px;
+	}
+	
+	.header .container {
+		background: transparent;
+	}
+
+	.label {
+		background-color: #eee;
+		padding: 6px 0;
+	}
+	.contact-content {
+		background-color: #fff;
+		padding: 6px 12px 6px 0;
+	}
+	.label, .contact-content {
+		margin: 0;
+	} 
+	.contact {
+		margin: 0;
+		padding: 0;
+	}
 </style>
 
 <wrapper class="header">
-  <container>
-    <row class="collapse">
-      <columns small="6">
-        <img src="http://placehold.it/200x50/663399">
-      </columns>
-      <columns small="6">
-        <p class="text-right">BASIC</p>
-      </columns>
-    </row>
-  </container>
+	<container>
+		<row>
+			<columns large="6">
+				<h4>Контакты</h4>
+				<row>
+					<columns small="12" large="12"  class="contact">
+						<p><strong class="text-lift label">Приемная</strong></p>
+						<p class="text-right">+7 (3412) 77-56-04</p>
+					</columns>
+				</row>
+			</columns>
+			<columns large="6">
+				<p class="text-right">BASIC</p>
+			</columns>
+		</row>
+	</container>
 </wrapper>
