@@ -12,56 +12,87 @@
 		background: transparent;
 	}
 
+	p {
+		margin: 0;
+	}
+
 	.label {
-		background-color: #eee;
+		background-color: #b3b3b3;
+	}
+
+	.label-text {
+		color: #fff;
+	}
+
+	.content {
+		background-color: #fff;
+	}
+
+	th.no-padding {
+		padding-bottom: 0;
+	}
+
+	th.on-padding {
 		padding: 6px 0;
 	}
-	.contact-content {
-		background-color: #fff;
-		padding: 6px 12px 6px 0;
+
+	th.arrow {
+		padding-left: 0;
 	}
-	.label, .contact-content {
-		margin: 0;
-	}
-	.contact {
-		margin: 0;
-		padding: 0;
-	}
+
 </style>
 
 <wrapper class="header">
 	<container>
-		<row>
-			<columns large="12" style="padding: 0 !important;">
-				<h4 style="color: #fff;">Контакты</h4>
-					<table width="580" border="0" cellpadding="0" cellspacing="0">
-						<tr height="32" bgcolor="#e5e5e5">
-							<td bgcolor="#3aaa35" style="padding: 6px 0;"><strong style="color: #ffffff;">Контактный телефон</strong></td>
-							<td><img src="https://lider-group.pro/img/email/arrow_green.png" style="margin: 0;"></td>
-							<td align="right" style="float: right; padding: 6px;">+7 (982) 83-86-444</td>
-							<td width="7"></td>
-						</tr>
-						<tr><td height="10"></td></tr>
-					</table>
-					<table width="580" border="0" cellpadding="0" cellspacing="0">
-						<tr height="32" bgcolor="#e5e5e5">
-							<td bgcolor="#3aaa35" style="padding: 6px 0;"><strong style="color: #ffffff;">Приемная</strong></td>
-							<td><img src="https://lider-group.pro/img/email/arrow_green.png" style="margin: 0;"></td>
-							<td align="right" style="float: right; padding: 6px;">+7 (3412) 77-56-04</td>
-							<td width="7"></td>
-						</tr>
-						<tr><td height="10"></td></tr>
-					</table>
-					<table width="580" border="0" cellpadding="0" cellspacing="0">
-						<tr height="32" bgcolor="#e5e5e5">
-							<td bgcolor="#3aaa35" style="padding: 6px 0;"><strong style="color: #ffffff;">E-mail</strong></td>
-							<td><img src="https://lider-group.pro/img/email/arrow_green.png" style="margin: 0;"></td>
-							<td align="right" style="float: right; padding: 6px;">office@lider-group.pro</td>
-							<td width="7"></td>
-						</tr>
-						<tr><td height="10"></td></tr>
-					</table>
+		<row class="content">
+
+			<columns large="4" valign="middle" class="show-for-large no-padding on-padding label">
+				<p class="label-text">Контактный телефон</p>
+			</columns>
+
+			<columns large="1" valign="middle" class="show-for-large no-padding arrow">
+				<img src="https://lider-group.pro/img/email/arrow_gray.png" alt="">
+			</columns>
+
+			<columns small="12" large="7" valign="middle" class="no-padding on-padding">
+				<p class="text-right">+7 (982) 83-86-444</p>
+			</columns>
+
+		</row>
+
+		<spacer size="16"></spacer>
+
+		<row class="content">
+			<columns large="4" valign="middle" class="show-for-large no-padding on-padding label">
+				<p class="label-text">Приемная</p>
+			</columns>
+
+			<columns large="1" valign="middle" class="show-for-large no-padding arrow">
+				<img src="https://lider-group.pro/img/email/arrow_gray.png" alt="">
+			</columns>
+
+			<columns small="12" large="7" valign="middle" class="no-padding on-padding">
+				<p class="text-right">+7 (3412) 77-56-04</p>
 			</columns>
 		</row>
+
+		<spacer size="16"></spacer>
+
+		<row class="content">
+			<columns large="4" valign="middle" class="show-for-large no-padding on-padding label">
+				<p class="label-text">e-mail</p>
+			</columns>
+
+			<columns large="1" valign="middle" class="show-for-large no-padding arrow">
+				<img src="https://lider-group.pro/img/email/arrow_gray.png" alt="">
+			</columns>
+
+			<columns small="12" large="7" valign="middle" class="no-padding on-padding">
+				<p class="text-right">office@lider-group.pro</p>
+			</columns>
+		</row>
+
+		<spacer size="16"></spacer>
+
 	</container>
 </wrapper>
